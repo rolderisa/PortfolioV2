@@ -11,12 +11,12 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://safetpojskic.com"),
-  title: "Safet Pojskic",
+  metadataBase: new URL("https://irisa.com"),
+  title: "Irisa Rolande",
   description: "Welcome to my personal portfolio!",
-  applicationName: "Safet Pojskic",
+  applicationName: "Irisa Rolande",
   keywords: [
-    "Safet Pojskic",
+    "Irisa Rolande",
     "portfolio",
     "personal",
     "website",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     "engineer",
   ],
   openGraph: {
-    siteName: "Safet Pojskic",
-    title: "Safet Pojskic",
+    siteName:"Irisa's Portfolio",
+    title: "Irisa Rolande",
     description: "Welcome to my personal portfolio!",
     type: "website",
     images: ["/opengraph-image.png"],

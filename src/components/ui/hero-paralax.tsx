@@ -1,14 +1,14 @@
-"use client";
+'use client';
 import {
   motion,
   MotionValue,
   useScroll,
   useSpring,
   useTransform,
-} from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+} from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 export const HeroParallax = ({
   products,
@@ -25,7 +25,7 @@ export const HeroParallax = ({
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ['start start', 'end start'],
   });
 
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };

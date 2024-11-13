@@ -1,12 +1,12 @@
-import Link from "next/link";
-import React from "react";
-import { FaJava, FaReact,FaNodeJs,FaPython,FaDocker   } from "react-icons/fa";
-import { SiPostgresql, SiSpringboot, SiTailwindcss } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
-import { TbBrandReactNative } from "react-icons/tb";
-import { DiDjango } from "react-icons/di";
-import { TbBrandTypescript } from "react-icons/tb";
-import { EvervaultCard, Icon } from "@/components/ui/evervault-card";
+import Link from 'next/link';
+import React from 'react';
+import { FaJava, FaReact, FaNodeJs, FaPython, FaDocker } from 'react-icons/fa';
+import { SiPostgresql, SiSpringboot, SiTailwindcss } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { TbBrandReactNative } from 'react-icons/tb';
+import { DiDjango } from 'react-icons/di';
+import { TbBrandTypescript } from 'react-icons/tb';
+import { EvervaultCard, Icon } from '@/components/ui/evervault-card';
 
 export function SkillsSection() {
   return (
@@ -19,7 +19,7 @@ export function SkillsSection() {
       </h1>
       <div
         className={
-          "grid grid-cols-1 gap-6  py-10 md:grid-cols-2 lg:grid-cols-3"
+          'grid grid-cols-1 gap-6  py-10 md:grid-cols-2 lg:grid-cols-3'
         }
       >
         {skills.map((item, idx) => (
@@ -43,63 +43,63 @@ export function SkillsSection() {
 
 const skills = [
   {
-    title: "React.js",
-    link: "https://react.dev/",
+    title: 'React.js',
+    link: 'https://react.dev/',
     icon: <FaReact />,
   },
   {
-    title: "Next.js",
-    link: "https://nextjs.org",
+    title: 'Next.js',
+    link: 'https://nextjs.org',
     icon: <TbBrandNextjs />,
   },
   {
-    title: "Tailwind",
-    link: "https://tailwindcss.com",
+    title: 'Tailwind',
+    link: 'https://tailwindcss.com',
     icon: <SiTailwindcss />,
   },
   {
-    title: "Java",
-    link: "https://www.oracle.com/java/",
+    title: 'Java',
+    link: 'https://www.oracle.com/java/',
     icon: <FaJava />,
   },
   {
-    title: "Spring Boot",
-    link: "https://spring.io/projects/spring-boot",
+    title: 'Spring Boot',
+    link: 'https://spring.io/projects/spring-boot',
     icon: <SiSpringboot />,
   },
   {
-    title: "PostgreSQL",
-    link: "https://www.postgresql.org",
+    title: 'PostgreSQL',
+    link: 'https://www.postgresql.org',
     icon: <SiPostgresql />,
   },
   {
-    title: "TypeScript",
-    link: "https://www.postgresql.org",
-    icon:<TbBrandTypescript />,
+    title: 'TypeScript',
+    link: 'https://www.postgresql.org',
+    icon: <TbBrandTypescript />,
   },
   {
-    title: "Django",
-    link: "https://www.postgresql.org",
+    title: 'Django',
+    link: 'https://www.postgresql.org',
     icon: <DiDjango />,
   },
   {
-    title: "CI/CD-Docker",
-    link: "https://www.postgresql.org",
+    title: 'CI/CD-Docker',
+    link: 'https://www.postgresql.org',
     icon: <FaDocker />,
   },
   {
-    title: "React Native",
-    link: "https://www.postgresql.org",
+    title: 'React Native',
+    link: 'https://www.postgresql.org',
     icon: <TbBrandReactNative />,
   },
   {
-    title: "Node.js",
-    link: "https://www.postgresql.org",
+    title: 'Node.js',
+    link: 'https://www.postgresql.org',
     icon: <FaNodeJs />,
   },
   {
-    title: "Python",
-    link: "https://www.postgresql.org",
+    title: 'Python',
+    link: 'https://www.postgresql.org',
     icon: <FaPython />,
   },
 ];

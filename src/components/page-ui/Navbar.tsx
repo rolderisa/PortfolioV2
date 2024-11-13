@@ -1,15 +1,15 @@
-"use client";
+'use client';
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
   TwitterLogoIcon,
   VercelLogoIcon,
-} from "@radix-ui/react-icons";
-import React, { useState } from "react";
+} from '@radix-ui/react-icons';
+import React, { useState } from 'react';
 
-import { ModeToggle } from "@/components/page-ui/ModeToggle";
-import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
-import { cn } from "@/lib/utils";
+import { ModeToggle } from '@/components/page-ui/ModeToggle';
+import { HoveredLink, Menu, MenuItem } from '@/components/ui/navbar-menu';
+import { cn } from '@/lib/utils';
 
 export function Navbar() {
   return (
@@ -23,7 +23,7 @@ function NavbarComponent({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className={cn('fixed top-10 inset-x-0 max-w-2xl mx-auto z-50', className)}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Navigation">

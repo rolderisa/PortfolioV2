@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import { twMerge } from "tailwind-merge";
+'use client';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
 
-import { TracingBeam } from "@/components/ui/tracing-beams";
-import { Badge } from "lucide-react";
+import { TracingBeam } from '@/components/ui/tracing-beams';
+import { Badge } from 'lucide-react';
 
 export function ExperienceSection() {
   return (
@@ -18,7 +18,7 @@ export function ExperienceSection() {
         <div className="relative mx-auto max-w-2xl pb-32 pt-4 text-white antialiased">
           {experience.map((item, index) => (
             <div key={`content-${index}`} className="mb-10 mt-4 md:mt-0">
-              <h2 className={twMerge("text-xl text-black dark:text-white")}>
+              <h2 className={twMerge('text-xl text-black dark:text-white')}>
                 {item.title}
               </h2>
               <span className="w-fit rounded-full py-1 text-sm italic text-neutral-800 dark:text-neutral-200">
@@ -37,32 +37,32 @@ export function ExperienceSection() {
 
 const experience = [
   {
-    title: "IRS Appointment System",
+    title: 'IRS Appointment System',
     description: (
       <ul className="list-disc">
-        
         <li>
-        Led both the frontend and backend teams in the IRSA development lifecycle.
+          Led both the frontend and backend teams in the IRSA development
+          lifecycle.
         </li>
         <li>
-        Delivered the new features bi-weekly as ordered by the Project
-        lead.Ensured customer satisfaction. 
+          Delivered the new features bi-weekly as ordered by the Project
+          lead.Ensured customer satisfaction.
         </li>
         <li>
-   The project is for all the Rwandan health centers that give treatment appointments to patients
-hence saving lives and time.
-          </li>
-<li>
-     Increased the app performance by 15%.Developed the app using great technologies such as Java (Spring
-Boot) and JavaScript (Next.js).Contributed to the securing of funds for the project. 
+          The project is for all the Rwandan health centers that give treatment
+          appointments to patients hence saving lives and time.
+        </li>
+        <li>
+          Increased the app performance by 15%.Developed the app using great
+          technologies such as Java (Spring Boot) and JavaScript
+          (Next.js).Contributed to the securing of funds for the project.
         </li>
       </ul>
     ),
-    badge:"Jan 2023 – Ongoing"
-    
+    badge: 'Jan 2023 – Ongoing',
   },
   {
-    title: "GUARD project",
+    title: 'GUARD project',
     description: (
       <ul className="list-disc">
         <li>
@@ -80,7 +80,6 @@ Boot) and JavaScript (Next.js).Contributed to the securing of funds for the proj
         </li>
       </ul>
     ),
-    badge: "Nov 2022 – Ongoing",
+    badge: 'Nov 2022 – Ongoing',
   },
-  
 ];
